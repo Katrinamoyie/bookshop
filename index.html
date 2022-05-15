@@ -1,0 +1,209 @@
+<DOCTYPE html>
+	<html>
+	
+	<head>
+		<meta charset="UTF-8">
+		<title> Savannis Bookshop</title>
+<link rel="stylesheet" type="text/css" href="hfc.css">
+<script src="script.js" type="text/javascript"> </script>
+
+	</head>
+	<header id="header"> SAVANNIS BOOKSHOP </header>
+	<article class="time">
+	Current Date:
+<input type="text" id="currentDate">
+<br><br>
+<script>
+  var today = new Date();
+  var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
+  document.getElementById("currentDate").value = date;
+</script>
+<!-- Current Time -->
+Current Time:
+<input type="text" id="currentTime">
+<br><br>
+<script>
+var today = new Date();
+var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+  document.getElementById("currentTime").value = time;
+</script>
+
+</article>
+	<article>
+		<img src="logo.jpg" class="logo">
+	</article>
+	
+<a href="#" id="toggle-button">
+	<div class="menulogo">
+	<span class="bar"></span>
+	<span class="bar"></span>
+	<span class="bar"></span>
+
+</div>
+</a>
+
+		<nav id="nav">
+			<div id="nav-links">
+		<ul>
+			<li> <a href="index.html" id="li"> HOME </a></li>
+			<li> <a href="features.html" id="li">FEATURES</a></li>
+			<li> <a href="contacts.html" id="li">CONTACTS</a></li>
+			<li> <a href="login.html" id="li">LOGIN</a></li>
+			<li> <a href="register.html" id="li">REGISTER</a></li>
+		</ul>
+</div>
+	</nav>
+
+
+
+
+	
+
+	
+	<p> SAVANNIS BOOKSHOP!</p>
+	<script type="text/javascript">
+		
+
+		var i = 0;
+		var images =[];
+		var time = 4000;
+
+		//image list 
+		images[0] = 'images/p6.jpg';
+		images[1] = 'p1.jpg';
+		images[2] = 'p2.jpg';
+		images[3] = 'p3.jpg';
+		images[4] = 'p5.jpg';
+
+
+		//change images
+		function changeimg()
+		{
+
+			document.slide.src = images[i];
+
+			if(i < images.length - 1){
+				i++;
+			} else {
+				i = 0;
+			}
+
+			setTimeout("changeimg()", time);
+
+
+		}
+
+		window.onload = changeimg;
+	</script>
+	<img name="slide"  width="500" height="200" id="slide">
+	
+
+	<main>
+		<body>
+			<script type="text/javascript">
+				function swap(id1,id2)
+	 {
+	  var y =document.getElementById(id1).inneHTML;
+	  var z =document.getElementById(id2).innerHTML;
+	   
+	  document.getElementById(id2).innerHTML=y;
+	 document.getElementById(id1).inneHTML=z;
+	
+	}
+			</script>
+			<section >
+				<div class="sec1" onmouseover ="swap('paragraph','para')" >
+				
+
+				
+					<div id= "para" class="art"   >
+					<img  src="images/p6.jpg"  width="300" height="200" >
+				</div>
+				
+
+				<div  id ="paragraph" class="p"  >	
+				<h1 > ABOUT US</h1>			
+					<p >
+					Savanis bookshop started way back in the year 2000 as vision.We were the only bookshop in Kenya by then and smaller too.We had only one shop in Nairobi's riverroad street.Over the years we grew as costomers increased due to our customer service.We moved from retail in Nairobi to wholesale across the country.We hope to grow across the east african region someday.We are happy to assist our at-risk customers shop safely .If you would like to make Arrangements for private browsing outside normal hours , Please Email or Contact us.
+				</p>
+			</div>
+		</div>
+			
+			</section>
+			<section  id="sec">
+				<h2 > OUR SPONSORS</h2>
+				<img src="lonhg.jpg" id="spon">
+				<img src="macmi.png" id="spon">
+				<img src="klb.png" id="spon">
+				<img src="karat.png" id="spon">
+				<img src="Bic.png" id="spon">
+				<img src="Pelikan.png" id="spon">
+
+
+			</section>
+			<section class="sec3">
+			<div class="contact-form">
+				<form action="" method="post" class="form1">
+                    <h3><b>Questions</b> </h3>
+                    <label> First Name:</label>
+                    <input type="text">
+                    <br> <br>
+                    <label>Last Name:</label>
+                    <input type="text">
+                    <br> <br>
+                    <label>PhoneNumber:</label>
+                    <input type="number"> <br> <br>
+                    <label>Email Address:</label>
+                    <input type="email"><br>
+                    <br>
+                    <label>Category:</label>
+                    <br>
+                    
+                    <input type="radio" name="category" value="Book">
+                    <label>Book</label>
+                    <input type="radio" name="category" value="Journal">
+                    <label>Journal</label>
+                    <input type="radio" name="category" value="Magazine">
+                    <label>Magazine</label>
+                    <input type="radio" name="category" value="Article">
+                    <label>Article</label><br><br> 
+                    <label>Comments:</label><br> 
+                    <textarea  name="Description"></textarea>
+                    <br><br>
+                    <input type="submit">
+				</form>
+			</div>
+				<div class="sitemap">
+				<p> SITE MAP</p> 
+				<ul class ="ul">
+					<li><a  href="home.html">Home</a></li>
+					<li><a href="features.html">Features</a></li>
+					<li><a href="Contacts.html">Contacts</a></li>	
+				</ul>
+				</div>		
+				 <div class="art1" id="art1">
+				 	<img src="logo.jpg" class="logo2">
+				 	<h4> Contact Us on</h4>
+				 	<p>+254785473245 OR OUR TOLL FREE 02003484280283</p>
+				 	<p> EMAIL @ savanniscenter.bookstore@yahoo.com</p>
+				 	<p> visit us on our social media pages </p>
+				 	<img src="fit.jpg" id="fit1">
+				 </div>
+			</section>
+			<footer id="footer"> copyright@savanis00</footer>
+
+			
+		</body>
+	</main>
+
+			<script type="text/javascript">
+		
+		const togglebutton = document.getElementById("toggle-button");
+const navlinks = document.getElementById("#nav-links");
+
+		togglebutton.addEventListener("click", () => {
+			navlinks.classList.toggle("active");
+			togglebutton.classList.toggle("active");
+		})
+
+	</script>	</html>
